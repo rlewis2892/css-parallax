@@ -24,13 +24,16 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<!-- custom jquery -->
+		<script src="js/custom.js"></script>
+
 		<title>CSS Driven Parallax</title>
 	</head>
-	<body>
-		<div class="parallax">
+	<body class="sfooter">
+		<div class="sfooter-content">
 
 			<header>
-				<nav class="navbar navbar-default navbar-fixed-top">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
@@ -56,36 +59,39 @@
 
 				<!-- begin welcome area -->
 				<div class="container">
-					<div class="jumbotron">
-						this is the welcome area
+					<div class="col-md-6 col-md-offset-6">
+						<div class="jumbotron">
+							<h1>Don't forget to fed teh kitty.</h1>
+						</div>
 					</div>
 				</div>
 			</header>
 
-			<section class="parallax--layer">
-				<div class="container">
-					section 1
-				</div>
-			</section>
+			<div class="parallax">
+				<section id="about" class="parallax--layer">
+					<div class="container">
+						About US
+					</div>
+				</section>
 
-			<section class="parallax--layer">
-				<div class="container">
-					section 2
-				</div>
-			</section>
+				<section id="skills" class="parallax--layer">
+					<div class="container">
+						Our Skills
+					</div>
+				</section>
 
-			<section class="parallax--layer">
-				<div class="container">
-					section 3
-				</div>
-			</section>
+				<section id="contact" class="parallax--layer">
+					<div class="container">
+						Contact US
+					</div>
+				</section>
+			</div><!--/.parallax-->
+		</div><!--/.sfooter-content-->
 
-			<footer class="parallax--layer">
-				<div class="container">
-					footer
-				</div>
-			</footer>
-
-		</div><!--/.parallax-->
+		<footer class="parallax--layer">
+			<div class="container">
+				footer
+			</div>
+		</footer>
 	</body>
 </html>

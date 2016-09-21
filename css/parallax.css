@@ -12,12 +12,35 @@
 
 		/* fix Edge painting bug */
 		body {
-			transform: translateZ(0);
+			/*transform: translateZ(0);*/
 		}
 
 		/* For fwd compatibility. Only avail on Firefox as of 9/21/16 */
 		.parallax {
 			scroll-behavior: smooth;
+		}
+
+		.parallax {
+			perspective: 1px;
+			/*height: 100vh;*/
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+
+		.parallax__layer {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.parallax__layer--base {
+			transform: translateZ(0);
+		}
+
+		.parallax__layer--back {
+			transform: translateZ(-1px);
 		}
 
 	}/*end @supports*/
