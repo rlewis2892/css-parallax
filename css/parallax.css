@@ -1,0 +1,24 @@
+/***
+* Begin CSS Driven Parallax
+* http://keithclark.co.uk/articles/practical-css-parallax/
+* Chrome 28+, Firefox 22+, Safari 9+ (OSX only), Opera 12+ and Edge.
+***/
+
+/* enable parallax only on md breakpoint on up*/
+@media only screen and (min-width: 992px) {
+
+	/* feature detection for parallax */
+	@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+
+		/* fix Edge painting bug */
+		body {
+			transform: translateZ(0);
+		}
+
+		/* For fwd compatibility. Only avail on Firefox as of 9/21/16 */
+		.parallax {
+			scroll-behavior: smooth;
+		}
+
+	}/*end @supports*/
+}/*end @media*/
