@@ -1,9 +1,11 @@
 /***
-* Theme Styles for
-* CSS Driven Parallax Example
-*
+* Theme Styles for CSS Driven Parallax Example
 * @author rlewis37@cnm.edu
 ***/
+
+/**
+* General Theme Styles
+**************************************/
 header {
 	background: url("../img/feed-the-kitty.jpg") no-repeat center;
 	background-attachment: fixed;
@@ -19,73 +21,6 @@ header .jumbotron {
 	border-radius: 0 !important;
 	color: #fff;
 	border: 1px solid rgba(255,255,255,0.5);
-}
-
-nav.navbar {
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
-}
-
-.navbar-brand {
-	font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-}
-
-.navbar-default {
-	background-color: white;
-}
-
-/* custom navbar-inverse overrides*/
-.navbar-inverse .navbar-brand {
-	color: #fff;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-	color: #fff;
-}
-
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover {
-	color: gold;
-}
-
-/* embiggen nav on md and lg screens only*/
-@media only screen and (min-width: 992px) {
-	nav.navbar {
-		padding: 40px 0;
-	}
-
-	.navbar-inverse {
-		background-color: transparent;
-		border-bottom: 1px solid rgba(255,255,255,0.2);
-	}
-
-	.navbar-brand {
-		font-size: 3rem;
-	}
-}
-
-section {
-	padding: 4rem 0;
-}
-
-section#skills {
-	background: url("../img/tile.png") repeat;
-	color: #fff;
-}
-
-section#contact {
-	background-color: gold;
-}
-
-footer {
-	background-color: #000;
-	color: #999;
-	padding: 3rem 0;
 }
 
 /***
@@ -105,4 +40,86 @@ body { width: 100%;}
 
 .sfooter-content {
 	flex: 1 0 auto;
+}
+
+/**
+* Main Navbar Styles
+**************************************/
+nav.navbar {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.navbar-brand {
+	font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+/**
+* Bootstrap Navbar Overrides
+**************************************/
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: gold;
+}
+
+/* embiggen nav on md and lg screens only*/
+@media only screen and (min-width: 992px) {
+	nav.navbar.navbar-inverse {
+		padding: 40px 0;
+	}
+
+	nav.navbar.navbar-default {
+		padding: 10px 0;
+	}
+
+	.navbar-inverse {
+		background-color: transparent;
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+
+	.navbar-brand {
+		font-size: 3rem;
+	}
+}
+
+/**
+* Content Section Styles
+**************************************/
+section {
+	padding: 4rem 0;
+}
+
+section#skills {
+	background: url("../img/tile.png") repeat;
+	color: #fff;
+}
+
+section#contact {
+	background-color: gold;
+}
+
+/**
+* Footer Styles
+**************************************/
+footer {
+	background-color: #000;
+	color: #999;
+	padding: 3rem 0;
 }
